@@ -15,4 +15,4 @@ cat("\nCXX14FLAGS=-O3 -march=native -mtune=native -fPIC","CXX14=clang++",file = 
 RUN Rscript -e 'options(repos = list(CRAN = "http://mran.revolutionanalytics.com/snapshot/2020-08-01")); \
   install.packages(c("brms", "data.table", "devtools", "parallel", "SnowballC", "tidyverse"))'
 
-CMD [ “/bin/bash” ]
+CMD ["/bin/bash"]
