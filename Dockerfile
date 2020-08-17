@@ -1,4 +1,4 @@
-FROM rocker/r-ver:3.6.3
+FROM rocker/rstudio:3.6.3
 LABEL "maintainer"="Akira Murakami (a.murakami@bham.ac.uk)"
 
 # install clang that is used to compile rstan
