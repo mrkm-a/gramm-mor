@@ -41,7 +41,7 @@ RUN Rscript -e 'dotR <- file.path(Sys.getenv("HOME"), ".R"); \
   cat("\nCXX14FLAGS=-O3 -march=native -mtune=native -fPIC","CXX14=clang++",file = M, sep = "\n", append = TRUE)'
 
 
-RUN Rscript -e 'options(repos = list(CRAN = "http://mran.revolutionanalytics.com/snapshot/2020-08-01")); \
+RUN Rscript -e 'options(repos = list(CRAN = "http://mran.revolutionanalytics.com/snapshot/2020-07-01")); \
   install.packages(c("brms", "data.table", "devtools", "SnowballC", "tidyverse", "dplyr"))'
 
 
