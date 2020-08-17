@@ -1,24 +1,24 @@
-FROM rocker/r-ver:3.6.3
+FROM rocker/rstudio:3.6.3
 LABEL "maintainer"="Akira Murakami (a.murakami@bham.ac.uk)"
 
 # install other packages that are necessary to install tidyverse and other R packages.
 # https://hub.docker.com/r/rocker/rstudio/dockerfile
 # https://hub.docker.com/r/rocker/tidyverse/dockerfile
 RUN apt-get update -qq && apt-get -y --no-install-recommends install \
-  file \
-  git \
-  libapparmor1 \
-  libclang-dev \
-  libcurl4-openssl-dev \
-  libedit2 \
-  libssl-dev \
-  lsb-release \
-  multiarch-support \
-  psmisc \
-  procps \
-  python-setuptools \
-  sudo \
-  wget \
+  #file \
+  #git \
+  #libapparmor1 \
+  #libclang-dev \
+  #libcurl4-openssl-dev \
+  #libedit2 \
+  #libssl-dev \
+  #lsb-release \
+  #multiarch-support \
+  #psmisc \
+  #procps \
+  #python-setuptools \
+  #sudo \
+  #wget \
   libxml2-dev \
   libcairo2-dev \
   libsqlite-dev \
