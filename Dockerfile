@@ -1,4 +1,4 @@
-FROM rocker/r-ver:4.0.2
+FROM rocker/r-ver:3.6.3
 LABEL "maintainer"="Akira Murakami (a.murakami@bham.ac.uk)"
 
 # install other packages that are necessary to install tidyverse and other R packages.
