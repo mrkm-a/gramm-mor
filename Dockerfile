@@ -27,10 +27,11 @@ RUN apt-get update -qq && apt-get -y --no-install-recommends install \
   libpq-dev \
   libssh2-1-dev \
   unixodbc-dev \
-  libsasl2-dev 
+  libsasl2-dev \
+  clang
   
 # install clang that is used to compile rstan
-RUN apt-get update && apt-get install -y --no-install-recommends clang
+# RUN apt-get update && apt-get install -y --no-install-recommends clang
   
 # https://github.com/stan-dev/rstan/wiki/Installing-RStan-on-Linux
 RUN Rscript -e 'dotR <- file.path(Sys.getenv("HOME"), ".R"); \
