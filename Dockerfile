@@ -41,7 +41,7 @@ RUN Rscript -e 'dotR <- file.path(Sys.getenv("HOME"), ".R"); \
 
 #RUN Rscript -e 'options(repos = list(CRAN = "http://mran.revolutionanalytics.com/snapshot/2020-07-01")); \
 #  install.packages(c("brms", "data.table", "devtools", "SnowballC", "tidyverse", "dplyr"))'
-RUN Rscript -e 'options(repos = list(CRAN = "http://mran.revolutionanalytics.com/snapshot/2020-07-01")); \
+RUN Rscript -e 'options(repos = list(CRAN = "http://mran.revolutionanalytics.com/snapshot/2020-08-01")); \
   install.packages(c("brms", "data.table", "SnowballC", "dplyr"))'
 
 
